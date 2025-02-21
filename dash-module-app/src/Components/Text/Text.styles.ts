@@ -9,6 +9,9 @@ const useStyles = (size: string, weight: string) => {
       color: ${textColor};
       font-size: ${size};
       font-weight: ${weight};
+      font-family: "Montserrat";
+      letter-spacing: 6px !important;
+      text-align: center;
       transition: color 0.3s ease-in-out;
     `,
   };

@@ -9,6 +9,10 @@ const useStyles = (size?: string, weight?: string) => {
       color: ${textColor};
       font-size: ${size || "24px"};
       font-weight: ${weight || "bold"};
+      font-family: "Montserrat", sans-serif;
+      line-height: 126.4%;
+      letter-spacing: 0%;
+      text-align: center;
       transition: color 0.3s ease-in-out;
     `,
   };

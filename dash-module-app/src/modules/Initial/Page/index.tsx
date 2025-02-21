@@ -13,10 +13,12 @@ export const Page: FunctionComponent = () => {
   return (
     <div>
       <Flex marginBottom={24} align="center">
-        <Title level="h1" size="42px">
+        <Title level="h1" size="32px" weight="bold">
           Access
         </Title>
-        <Text>ACCESS CONTROL</Text>
+        <Text size="24px" weight="normal">
+          ACCESS CONTROL
+        </Text>
       </Flex>
       <Flex>
         <AccessCircule />
