@@ -1,16 +1,13 @@
 import { css, keyframes } from "@emotion/react";
+import useThemeStyles from "../../hook/useThemeStyles";
 
 const rotate = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 `;
 
-const useStyles = (isWhite: boolean) => {
-  const color = isWhite ? "#000000" : "#00ff99";
+const useStyles = () => {
+  const { buttonBg } = useThemeStyles();
 
   return {
     circleContainer: css`
@@ -25,7 +22,7 @@ const useStyles = (isWhite: boolean) => {
       width: 80px;
       height: 80px;
       border: 5px solid transparent;
-      border-top: 5px solid ${color};
+      border-top: 5px solid ${buttonBg};
       border-radius: 50%;
       animation: ${rotate} 1.5s linear infinite;
       position: absolute;
@@ -34,7 +31,7 @@ const useStyles = (isWhite: boolean) => {
       width: 80px;
       height: 80px;
       border: 5px solid transparent;
-      border-left: 5px solid ${color};
+      border-left: 5px solid ${buttonBg};
       border-radius: 50%;
       animation: ${rotate} 1.5s linear infinite reverse;
       position: absolute;
@@ -43,7 +40,7 @@ const useStyles = (isWhite: boolean) => {
       width: 60px;
       height: 60px;
       border: 5px solid transparent;
-      border-right: 5px solid ${color};
+      border-right: 5px solid ${buttonBg};
       border-radius: 50%;
       animation: ${rotate} 2s linear infinite reverse;
       position: absolute;
@@ -52,7 +49,7 @@ const useStyles = (isWhite: boolean) => {
       width: 40px;
       height: 40px;
       border: 5px solid transparent;
-      border-bottom: 5px solid ${color};
+      border-bottom: 5px solid ${buttonBg};
       border-radius: 50%;
       animation: ${rotate} 2.5s linear infinite;
       position: absolute;

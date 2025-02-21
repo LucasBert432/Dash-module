@@ -7,8 +7,8 @@ export const ButtonTheme: FunctionComponent<ButtonProps> = ({
   text,
   onClick,
 }) => {
-  const { isWhite, toggleTheme } = useThemeStore();
-  const styles = useStyles(isWhite);
+  const { toggleTheme } = useThemeStore();
+  const styles = useStyles();
 
   const handleClick = () => {
     toggleTheme();

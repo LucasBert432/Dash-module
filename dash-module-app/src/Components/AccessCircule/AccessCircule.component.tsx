@@ -1,10 +1,8 @@
-import { useThemeStore } from "../../globalStore/globalStore";
 import { Flex } from "../Flex/Flex.component";
 import useStyles from "./AccessCircule.styles";
 
 const AccessCircule = () => {
-  const isWhite = useThemeStore((state) => state.isWhite);
-  const styles = useStyles(isWhite);
+  const styles = useStyles();
 
   return (
     <Flex align="center" marginBottom={24} gap={12}>
