@@ -1,16 +1,21 @@
 import { css } from "@emotion/react";
+import useThemeStyles from "../../hook/useThemeStyles";
 
-const useStyles = (isWhite: boolean) => ({
-  container: css`
-    width: 200px;
-    height: 200px;
-    background-color: ${isWhite ? "#333" : "rgba(57, 233, 145, 1)"};
-    border-radius: 16px;
-    border: 2px solid ${isWhite ? "#42f4a1" : "#ffffff"};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  `,
-});
+const useStyles = () => {
+  const styles = useThemeStyles();
+
+  return {
+    container: css`
+      width: 200px;
+      height: 200px;
+      background-color: ${styles.buttonHover};
+      border-radius: 16px;
+      border: 2px solid ${styles.invert};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `,
+  };
+};
 
 export default useStyles;

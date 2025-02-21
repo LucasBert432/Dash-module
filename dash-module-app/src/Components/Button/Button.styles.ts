@@ -2,12 +2,12 @@ import { css } from "@emotion/react";
 import useThemeStyles from "../../hook/useThemeStyles";
 
 const useStyles = () => {
-  const { buttonBg, buttonHover, secondaryHighlight } = useThemeStyles();
+  const styles = useThemeStyles();
 
   return {
     button: css`
-      background-color: ${buttonBg};
-      color: ${secondaryHighlight};
+      background-color: ${styles.backgroundColor};
+      color: ${styles.buttonBg};
       font-size: 16px;
       font-weight: bold;
       padding: 10px 20px;
@@ -17,7 +17,7 @@ const useStyles = () => {
       transition: background-color 0.3s ease-in-out;
 
       &:hover {
-        background-color: ${buttonHover};
+        background-color: ${styles.buttonHover};
       }
     `,
   };
