@@ -45,6 +45,9 @@ const Page: FunctionComponent = () => {
       <RenderIf condition={isLoading}>
         <div>
           <LoaderAccess />
+          <Title level="h2" size="22px" weight="lighter">
+            Bem-vindo...
+          </Title>
         </div>
       </RenderIf>
     </div>
