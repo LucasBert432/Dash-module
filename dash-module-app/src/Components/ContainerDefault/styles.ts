@@ -1,20 +1,23 @@
 import { css } from "@mui/material";
 import useThemeStyles from "../../hook/useThemeStyles";
 
-const useStyles = (size: number | undefined) => {
+const useStyles = () => {
   const styles = useThemeStyles();
-  const newSize = size || 200;
 
   return {
     container: css`
-      width: ${newSize}px;
-      height: ${newSize}px;
-      background-color: ${styles.buttonBg};
-      border-radius: 16px;
-      border: 2px solid ${styles.invertBackgroundColor};
+      width: 100%;
+      height: auto;
+      background-color: ${styles.backgroundColor};
+      color: ${styles.textColor};
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      align-items: flex-end;
+      @media (min-width: 768px) {
+        padding: 20px;
+      }
     `,
   };
 };
