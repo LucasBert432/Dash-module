@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://github.com/seu-repositorio">
-    <img src="/public/circulo.svg" width="300px" />
+    <img src="access-events-app/src/assets/circulo.png" width="300px" />
   </a>
 </div>
 
@@ -33,6 +33,12 @@
 ---
 
 ## ⚡ Scripts
+
+### Entrar na pasta do projeto
+
+```zsh
+cd access-events-app
+```
 
 ### Instalar dependências
 
