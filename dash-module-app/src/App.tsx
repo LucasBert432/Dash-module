@@ -1,12 +1,15 @@
 import "./App.css";
 import GlobalStyles from "./globalStyles";
 import AppRoutes from "./AppRoutes";
+import { ModalProvider } from "./contexts/ModalContext";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <AppRoutes />
+      <ModalProvider>
+        <AppRoutes />
+      </ModalProvider>
     </>
   );
 }
