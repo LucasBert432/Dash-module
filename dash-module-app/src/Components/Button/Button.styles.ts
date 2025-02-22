@@ -6,7 +6,7 @@ const useStyles = () => {
 
   return {
     button: css`
-      background-color: ${styles.backgroundColor};
+      background-color: ${styles.secondaryHighlight};
       color: ${styles.buttonBg};
       font-size: 16px;
       font-weight: bold;
