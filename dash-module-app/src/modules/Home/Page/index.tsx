@@ -1,22 +1,30 @@
 import { FunctionComponent } from "react";
-import { Flex } from "../../../Components/Flex";
-import { Title } from "../../../Components/Title";
 import Header from "../../../Components/Header";
-import CardList from "../Components/CardList";
-import { Text } from "../../../Components/Text";
+import SectionHome from "../Components/SectionHome";
+import EventsHome from "../Components/EventsSection";
+import SuggestionSection from "../Components/SuggestionSection";
+import CreateEventSection from "../Components/CreateEventSection";
+import useStyles from "./styles";
+import About from "../Components/About";
+
 export const Home: FunctionComponent = () => {
+  const styles = useStyles();
   return (
-    <div>
+    <>
       <Header />
-      <Flex marginBottom={24} align="center">
-        <Title level="h1" size="32px" weight="bold">
-          Access
-        </Title>
-        <Text size="16px" weight="normal">
-          testando
-        </Text>
-        <CardList />
-      </Flex>
-    </div>
+      <SectionHome />
+      <section css={styles.wrapper} id="eventos">
+        <EventsHome />
+      </section>
+      <section css={styles.wrapper} id="sugestoes">
+        <SuggestionSection />
+      </section>
+      <section css={styles.wrapper} id="sobre">
+        <About />
+      </section>
+      <section css={styles.wrapper} id="crieEvento">
+        <CreateEventSection />
+      </section>
+    </>
   );
 };

@@ -1,12 +1,11 @@
 import { css } from "@emotion/react";
 
-const useStyles = () => ({
-  wrapper: css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  `,
-});
+const useStyles = () => {
+  return {
+    wrapper: css`
+      margin-top: 72px;
+    `,
+  };
+};
 
 export default useStyles;
