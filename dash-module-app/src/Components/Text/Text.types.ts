@@ -4,4 +4,5 @@ export type TextProps = {
   children: ReactNode;
   size?: string;
   weight?: "normal" | "bold" | "lighter";
+  invert?: boolean;
 };

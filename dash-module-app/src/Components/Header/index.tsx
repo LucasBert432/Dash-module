@@ -2,16 +2,21 @@ import { FunctionComponent, useState } from "react";
 import { Menu, X } from "lucide-react";
 import useStyles from "./Header.styles";
 import { menuItems } from "./header.const";
-import { Link } from "react-router-dom";
+import { Text } from "../Text/Text.component";
+import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 export const Header: FunctionComponent = () => {
   const styles = useStyles();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <header css={styles.header}>
-      <span css={styles.logo}>Access</span>
-
+      <div onClick={() => navigate("/")} css={styles.logo}>
+        <Text size="32px" weight="normal">
+          Access
+        </Text>
+      </div>
       <button
         css={styles.menuButton}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -22,13 +27,17 @@ export const Header: FunctionComponent = () => {
       <nav css={[styles.nav, isMenuOpen && styles.navOpen]}>
         <ul css={styles.menu}>
           {menuItems.map((item) => (
-            <li key={item.id}>
+            <li key={item?.id}>
               <Link
                 to={item.id}
+                smooth={true}
+                duration={500}
                 css={styles.menuItem}
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item.label}
+                <Text size="16px" weight="normal">
+                  {item?.label}
+                </Text>
               </Link>
             </li>
           ))}

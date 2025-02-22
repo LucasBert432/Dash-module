@@ -6,8 +6,9 @@ export const Text: FunctionComponent<TextProps> = ({
   children,
   size = "16px",
   weight = "normal",
+  invert,
 }) => {
-  const styles = useStyles(size, weight);
+  const styles = useStyles(size, weight, invert);
 
   return <p css={styles.text}>{children}</p>;
 };

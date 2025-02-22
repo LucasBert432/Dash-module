@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import { useThemeStore } from "../../../globalStore/globalStore";
 import { Flex } from "../../../Components/Flex";
 import { Title } from "../../../Components/Title";
 import { Text } from "../../../Components/Text";
@@ -8,22 +7,24 @@ import { ButtonTheme } from "../../../Components/ButtonTheme";
 import { ContainerController } from "../Components/ContainerController";
 
 export const Page: FunctionComponent = () => {
-  const isWhite = useThemeStore((state) => state.isWhite);
-
   return (
     <div>
-      <Flex marginBottom={24} align="center">
-        <Title level="h1" size="42px">
-          Access
-        </Title>
-        <Text>ACCESS CONTROL</Text>
-      </Flex>
       <Flex>
         <AccessCircule />
+      </Flex>
+      <Flex marginBottom={24} align="center">
+        <Title level="h1" size="48px" weight="bold">
+          Access
+        </Title>
+        <Text size="12px" weight="normal">
+          ACCESS CONTROL EVENTS
+        </Text>
+      </Flex>
+      <Flex marginTop={32}>
         <ContainerController />
       </Flex>
       <Flex marginTop={24} align="center">
-        <ButtonTheme text="Trocar tema" isWhite={isWhite} />
+        <ButtonTheme text="Trocar tema" />
       </Flex>
     </div>
   );

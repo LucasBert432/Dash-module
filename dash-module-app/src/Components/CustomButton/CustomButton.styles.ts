@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import useThemeStyles from "../../hook/useThemeStyles";
 
 const useStyles = () => {
-  const { buttonBg, textColor, buttonHover, borderColor } = useThemeStyles();
+  const { buttonBg, textColor, buttonHover } = useThemeStyles();
 
   return {
     button: css`
@@ -17,8 +17,8 @@ const useStyles = () => {
       }
     `,
     outlinedButton: css`
-      border: 1px solid ${borderColor} !important;
-      color: ${borderColor} !important;
+      border: 1px solid ${textColor} !important;
+      color: ${textColor} !important;
       margin-top: 10px;
       text-transform: none;
       font-weight: bold;

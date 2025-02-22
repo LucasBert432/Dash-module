@@ -1,5 +1,4 @@
 export type ButtonProps = {
-  text: string;
+  text?: string;
   onClick?: () => void;
-  isWhite: boolean;
 };

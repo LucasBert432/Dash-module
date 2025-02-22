@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import useThemeStyles from "../../hook/useThemeStyles";
 
 const useStyles = () => {
-  const { backgroundColor, textColor, borderColor } = useThemeStyles();
+  const styles = useThemeStyles();
 
   return {
     header: css`
@@ -10,8 +10,8 @@ const useStyles = () => {
       justify-content: space-between;
       align-items: center;
       padding: 15px 20px;
-      background-color: ${backgroundColor};
-      color: ${textColor};
+      background-color: ${styles.backgroundColor};
+      color: ${styles.textColor};
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       position: fixed;
       width: 100%;
@@ -23,6 +23,7 @@ const useStyles = () => {
     logo: css`
       font-size: 24px;
       font-weight: bold;
+      cursor: pointer;
     `,
 
     menuButton: css`
@@ -41,8 +42,10 @@ const useStyles = () => {
       top: 60px;
       left: 0;
       width: 100%;
-      background-color: ${backgroundColor};
+      background-color: ${styles.backgroundColor};
       display: none;
+      height: 250px;
+
       flex-direction: column;
       align-items: center;
       padding: 15px 0;
@@ -52,6 +55,7 @@ const useStyles = () => {
         position: static;
         flex-direction: row;
         background: none;
+        height: auto;
         width: auto;
         padding: 0;
       }
@@ -79,10 +83,12 @@ const useStyles = () => {
       cursor: pointer;
       font-size: 18px;
       text-decoration: none;
-      color: ${textColor};
+      color: ${styles.textColor};
+      background-color: red;
+
       transition: color 0.3s ease-in-out;
       &:hover {
-        color: ${borderColor};
+        color: ${styles.invertBackgroundColor} !important;
       }
     `,
   };

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
 export interface ContainerProps {
-  isWhite?: boolean;
+  size?: number | undefined;
   children?: ReactNode;
 }

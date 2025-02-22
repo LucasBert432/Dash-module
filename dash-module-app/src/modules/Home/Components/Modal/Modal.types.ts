@@ -4,6 +4,7 @@ export type ModalProps = {
     image: string;
     title: string;
     description: string;
+    date: string;
   }) => void;
   open: boolean;
 };

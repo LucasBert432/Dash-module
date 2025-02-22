@@ -1,5 +1,6 @@
 export type CardProps = {
   image: string;
   title: string;
-  description: string;
+  location: string;
+  date: string;
 };
