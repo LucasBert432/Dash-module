@@ -3,15 +3,16 @@ import { Menu, X } from "lucide-react";
 import useStyles from "./Header.styles";
 import { menuItems } from "./header.const";
 import { Text } from "../Text/Text.component";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 export const Header: FunctionComponent = () => {
   const styles = useStyles();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <header css={styles.header}>
-      <div css={styles.logo}>
+      <div onClick={() => navigate("/")} css={styles.logo}>
         <Text size="32px" weight="normal">
           Access
         </Text>
@@ -29,6 +30,8 @@ export const Header: FunctionComponent = () => {
             <li key={item?.id}>
               <Link
                 to={item.id}
+                smooth={true}
+                duration={500}
                 css={styles.menuItem}
                 onClick={() => setIsMenuOpen(false)}
               >
