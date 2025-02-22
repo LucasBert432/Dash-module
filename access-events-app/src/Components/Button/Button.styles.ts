@@ -17,7 +17,7 @@ const useStyles = () => {
       transition: background-color 0.3s ease-in-out;
 
       &:hover {
-        background-color: ${styles.buttonHover};
+        background-color: ${styles.defaultGray};
       }
     `,
   };

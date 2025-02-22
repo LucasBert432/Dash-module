@@ -10,7 +10,7 @@ const useStyles = (invertTheme?: boolean) => {
       height: auto;
       background-color: ${!invertTheme
         ? styles.backgroundColor
-        : styles.invertBackgroundColor};
+        : styles.invertDarkGray};
       color: ${!invertTheme ? styles.textColor : styles.invertTextColor};
       display: flex;
       align-items: center;
@@ -32,7 +32,8 @@ const useStyles = (invertTheme?: boolean) => {
     `,
     title: css`
       position: static;
-      top: 18px;
+      top: 52px;
+      margin-top: 62px;
       left: 34px;
       font-size: 20px;
       font-weight: bold;
@@ -40,10 +41,12 @@ const useStyles = (invertTheme?: boolean) => {
 
       @media (min-width: 768px) {
         font-size: 24px;
+        margin-top: 62px;
       }
 
       @media (min-width: 1024px) {
         font-size: 28px;
+        margin-top: 62px;
       }
     `,
     subtitle: css`

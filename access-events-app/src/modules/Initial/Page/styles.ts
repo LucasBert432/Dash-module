@@ -1,11 +1,12 @@
 import { css } from "@emotion/react";
 
 const useStyles = () => ({
-  wrapper: css`
+  container: css`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    margin-top: 150px;
   `,
 });
 

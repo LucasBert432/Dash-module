@@ -1,21 +1,21 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent } from "react";
 import useStyles from "./ContainerController.styles";
 import { ContainerPage } from "../../../../Components/ContainerPage";
 import { Button } from "../../../../Components/Button";
-import { useNavigate } from "react-router-dom";
 
-export const ContainerController: FunctionComponent = () => {
+export type ContainerControllerProps = {
+  onClick: () => void;
+};
+
+export const ContainerController: FunctionComponent<
+  ContainerControllerProps
+> = ({ onClick }) => {
   const styles = useStyles();
-  const navigate = useNavigate();
-
-  const handleNavigate = useCallback(() => {
-    navigate("/home");
-  }, []);
 
   return (
     <div css={styles.wrapper}>
       <ContainerPage size={270}>
-        <Button text="Acessar" onClick={handleNavigate} />
+        <Button text="Acessar" onClick={onClick} />
       </ContainerPage>
     </div>
   );

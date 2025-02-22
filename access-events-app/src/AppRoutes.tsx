@@ -1,14 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Page } from "./modules/Initial/Page";
-import { Home } from "./modules/Home/Page";
+import { lazy, Suspense } from "react";
+import LoaderAccess from "./Components/LoaderAccess";
+
+const Page = lazy(() => import("./modules/Initial/Page"));
+const Home = lazy(() => import("./modules/Home/Page"));
 
 const AppRoutes = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Page />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
+      <Suspense fallback={<LoaderAccess />}>
+        <Routes>
+          <Route path="/" element={<Page />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 };

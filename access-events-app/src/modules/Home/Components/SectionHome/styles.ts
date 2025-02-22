@@ -8,6 +8,10 @@ const useStyles = () => {
     wrapperCircule: css`
       margin-right: 24px;
     `,
+
+    wrapperThemeButton: css`
+      margin-top: 12px;
+    `,
   };
 };
 

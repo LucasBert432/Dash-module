@@ -44,9 +44,15 @@ const useThemeStyles = () => {
     secondaryHighlight: isWhite ? "#00CC77" : "rgba(51, 51, 51, 1);",
 
     // verde escuro
+    defaultWhite: "#333333",
+    // verde escuro
     defaultDarkGreen: "#00CC77",
     // preto
     defaultDark: "rgba(51, 51, 51, 1);",
+    //cinza
+    defaultGray: "rgb(143, 143, 143);",
+
+    invertDarkGray: isWhite ? "rgba(51, 51, 51, 1);" : "rgb(143, 143, 143);",
   };
 };
 

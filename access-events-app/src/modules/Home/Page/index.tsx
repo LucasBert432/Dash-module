@@ -4,27 +4,27 @@ import SectionHome from "../Components/SectionHome";
 import EventsHome from "../Components/EventsSection";
 import SuggestionSection from "../Components/SuggestionSection";
 import CreateEventSection from "../Components/CreateEventSection";
-import useStyles from "./styles";
 import About from "../Components/About";
 
-export const Home: FunctionComponent = () => {
-  const styles = useStyles();
+const Home: FunctionComponent = () => {
   return (
     <>
       <Header />
       <SectionHome />
-      <section css={styles.wrapper} id="eventos">
+      <section id="eventos">
         <EventsHome />
       </section>
-      <section css={styles.wrapper} id="sugestoes">
+      <section id="sugestoes">
         <SuggestionSection />
       </section>
-      <section css={styles.wrapper} id="sobre">
+      <section id="sobre">
         <About />
       </section>
-      <section css={styles.wrapper} id="crieEvento">
+      <section id="crieEvento">
         <CreateEventSection />
       </section>
     </>
   );
 };
+
+export default Home;

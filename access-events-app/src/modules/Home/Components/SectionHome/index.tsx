@@ -16,8 +16,9 @@ const SectionHome: FunctionComponent = () => {
   return (
     <div css={styles.wrapper}>
       <ContainerDefault>
-        <ButtonTheme text="Trocar tema" />
-
+        <div css={styles.wrapperThemeButton}>
+          <ButtonTheme text="Trocar tema" />
+        </div>
         <Flex justify="flex-start" align="flex-start" direction="row">
           <RenderIf condition={!isMobile}>
             <div css={styles.wrapperCircule}>
