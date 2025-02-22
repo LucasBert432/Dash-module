@@ -7,8 +7,9 @@ export const Title: FunctionComponent<TitleProps> = ({
   level = "h1",
   size,
   weight,
+  invertTheme,
 }) => {
-  const styles = useStyles(size, weight);
+  const styles = useStyles(size, weight, invertTheme);
 
   const Tag = level as keyof JSX.IntrinsicElements;
 

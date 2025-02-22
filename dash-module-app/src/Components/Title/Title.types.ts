@@ -5,4 +5,5 @@ export type TitleProps = {
   level?: "h1" | "h2" | "h3";
   size?: string;
   weight?: "normal" | "bold" | "lighter";
+  invertTheme?: boolean;
 };
