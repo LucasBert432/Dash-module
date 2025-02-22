@@ -1,7 +1,11 @@
-import { ReactNode } from "react";
+import { ModalSettings } from "../../contexts/ModalContext";
 
-export type CustomModalProps = {
-  open: boolean;
-  onClose: () => void;
-  children: ReactNode;
+export type ModalProps = {
+  id: string;
+  onDismiss?: () => void;
+};
+
+export type UseStylesProps = {
+  settings?: ModalSettings;
+  withoutHeader?: boolean;
 };

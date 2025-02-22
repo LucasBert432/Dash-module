@@ -12,17 +12,19 @@ const GlobalStyles: FunctionComponent = () => {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-          font-family: Arial, sans-serif;
+          font-family: "Montserrat", sans-serif;
+          word-break: break-word;
         }
 
         body {
           background-color: ${isWhite ? "#FFFFFF" : "rgba(51, 51, 51, 1)"};
           color: ${isWhite ? "rgba(57, 233, 145, 1)" : "#333"};
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
+
           transition: background-color 0.3s ease-in-out;
+        }
+
+        .no-scroll {
+          overflow: hidden;
         }
       `}
     />
