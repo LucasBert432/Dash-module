@@ -7,19 +7,20 @@ const useStyles = () => {
   return {
     container: css`
       display: flex;
-      flex-direction: column; /* Definido como mobile first */
+      flex-direction: column;
       align-items: center;
       height: auto;
       width: 100%;
       padding: 20px;
       background-color: ${styles.defaultDark};
       border: 1px solid ${styles.defaultDarkGreen};
-      border-radius: 120px;
+      border-radius: 0px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         flex-direction: row;
-        width: 1020px;
+        width: 100%;
         padding: 20px;
+        border-radius: 120px;
         align-items: center;
       }
     `,
@@ -42,10 +43,10 @@ const useStyles = () => {
       flex-direction: column;
       justify-content: flex-start;
       flex: 1;
-      align-items: center; /* Alinhado ao centro no mobile first */
+      align-items: center;
 
       @media (min-width: 768px) {
-        align-items: flex-start; /* No desktop, alinhado à esquerda */
+        align-items: flex-start;
       }
     `,
 
@@ -55,10 +56,10 @@ const useStyles = () => {
       justify-content: flex-start;
       flex: 1;
       margin-top: 26px;
-      align-items: center; /* Centralizado no mobile first */
+      align-items: center;
 
       @media (min-width: 768px) {
-        align-items: flex-start; /* No desktop, alinhado à esquerda */
+        align-items: flex-start;
         margin-left: 24px;
       }
     `,
