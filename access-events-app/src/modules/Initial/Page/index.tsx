@@ -1,5 +1,5 @@
 import { FunctionComponent, useCallback, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importe o useNavigate
+import { useNavigate } from "react-router-dom";
 import { Flex } from "../../../Components/Flex";
 import { Title } from "../../../Components/Title";
 import AccessCircule from "../../../Components/AccessCircule/AccessCircule.component";
