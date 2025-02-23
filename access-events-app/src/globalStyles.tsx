@@ -18,8 +18,6 @@ const GlobalStyles: FunctionComponent = () => {
 
         body {
           background-color: ${isWhite ? "#FFFFFF" : "rgba(51, 51, 51, 1)"};
-          color: ${isWhite ? "rgba(57, 233, 145, 1)" : "#333"};
-
           transition: background-color 0.3s ease-in-out;
         }
 
