@@ -10,6 +10,7 @@ import { lockMainScroll, unlockMainScroll } from "../../utils/scrollLock";
 
 export type ModalSettings = {
   title?: string;
+  description?: string;
   lockable?: boolean;
   width?: number;
   persistent?: boolean;

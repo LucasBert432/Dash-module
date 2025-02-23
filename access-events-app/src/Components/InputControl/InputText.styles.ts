@@ -2,32 +2,32 @@ import { css } from "@emotion/react";
 import useThemeStyles from "../../hook/useThemeStyles";
 
 const useStyles = () => {
-  const { textColor, borderColor } = useThemeStyles();
+  const { defaultDark, defaultDarkGreen } = useThemeStyles();
 
   return {
     textField: css`
       width: 100%;
 
       & .MuiInputBase-root {
-        color: ${textColor};
+        color: ${defaultDark};
         font-size: 14px;
       }
 
       & .MuiInputLabel-root {
-        color: ${textColor} !important;
+        color: ${defaultDark} !important;
         font-size: 14px;
       }
 
       & .MuiOutlinedInput-notchedOutline {
-        border-color: ${borderColor} !important;
+        border-color: ${defaultDarkGreen} !important;
       }
 
       & .MuiInputLabel-root.Mui-focused {
-        color: ${textColor} !important;
+        color: ${defaultDark} !important;
       }
 
       & .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-        border-color: ${borderColor} !important;
+        border-color: ${defaultDarkGreen} !important;
       }
 
       @media (min-width: 600px) {

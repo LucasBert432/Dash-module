@@ -2,14 +2,17 @@ import "./App.css";
 import GlobalStyles from "./globalStyles";
 import AppRoutes from "./AppRoutes";
 import { ModalProvider } from "./contexts/ModalContext";
+import { ToastProvider } from "./contexts/ToastContext";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <ModalProvider>
-        <AppRoutes />
-      </ModalProvider>
+      <ToastProvider>
+        <ModalProvider>
+          <AppRoutes />
+        </ModalProvider>
+      </ToastProvider>
     </>
   );
 }

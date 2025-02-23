@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { Modal as MUIModal, Box, IconButton, ModalProps } from "@mui/material";
 import { useModalContext } from "../../contexts/ModalContext";
 import CloseIcon from "@mui/icons-material/Close";
+import { Flex } from "../Flex";
 
 const Modal: FunctionComponent<ModalProps> = ({ children, id, ...rest }) => {
   const { open, settings, closeModal } = useModalContext();
@@ -55,11 +56,18 @@ const Modal: FunctionComponent<ModalProps> = ({ children, id, ...rest }) => {
             paddingBottom: "8px",
           }}
         >
-          {settings?.title && (
-            <h2 id="modal-title" style={{ margin: 0 }}>
-              {settings.title}
-            </h2>
-          )}
+          <Flex>
+            {settings?.title && (
+              <h2 id="modal-title" style={{ margin: 0 }}>
+                {settings.title}
+              </h2>
+            )}
+            {settings?.description && (
+              <span id="modal-description" style={{ margin: 0 }}>
+                {settings.description}
+              </span>
+            )}
+          </Flex>
           <IconButton
             aria-label="close"
             onClick={handleModalDismiss}
