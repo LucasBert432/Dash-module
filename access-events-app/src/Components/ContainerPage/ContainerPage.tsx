@@ -6,7 +6,12 @@ export const ContainerPage: FunctionComponent<ContainerProps> = ({
   children,
   size,
 }) => {
-  const styles = useStyles(size);
+  const sizeAsNumber = typeof size === "string" ? Number(size) : size;
+  const styles = useStyles(sizeAsNumber);
 
-  return <div css={styles.container}>{children}</div>;
+  return (
+    <div data-testid="container-page" css={styles.container}>
+      {children}
+    </div>
+  );
 };
