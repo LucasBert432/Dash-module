@@ -8,7 +8,7 @@ const CustomButton = ({ variant = "contained", ...props }: ButtonProps) => {
     <Button
       {...props}
       variant={variant}
-      css={variant === "contained" ? styles.button : styles.outlinedButton}
+      sx={variant === "contained" ? styles.button : styles.outlinedButton}
     >
       {props.children}
     </Button>
