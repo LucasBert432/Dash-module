@@ -14,10 +14,11 @@
     "moduleResolution": "bundler",
     "noEmit": true,
     "allowImportingTsExtensions": true,
+    "typeRoots": ["node_modules/@types"],
     "types": [
       "jest",
       "@testing-library/jest-dom",
-      "node",
+      "glob",
       "@emotion/react/types/css-prop"
     ]
   }
