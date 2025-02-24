@@ -44,7 +44,7 @@ const useStyles = () => {
       width: 100%;
       background-color: ${styles.backgroundColor};
       display: none;
-      height: 250px;
+      height: 350px;
 
       flex-direction: column;
       align-items: center;
