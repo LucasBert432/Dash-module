@@ -70,6 +70,11 @@ pnpm build
 ```zsh
 pnpm lint
 ```
+### Rodar testes
+
+```zsh
+pnpm test
+```
 
 ### Visualizar a aplicação após o build
 
