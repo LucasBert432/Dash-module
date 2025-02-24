@@ -10,7 +10,7 @@ const About: FunctionComponent = () => {
       <BoxContainer
         invertTheme
         title="Sobre"
-        subtitle="Saiba um pouco sobre nós"
+        subtitle="Saiba um pouco sobre nós."
       >
         <AboutAccessEvents />
       </BoxContainer>
