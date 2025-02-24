@@ -1,3 +1,4 @@
+
 # Acess Events 📱
 
 **Acess Events** é uma plataforma de captura de solicitação para promover e divulgar eventos. Com uma interface interativa e moderna, o objetivo é conectar usuários a eventos importantes e ajudar na organização de atividades de forma eficiente.
@@ -23,12 +24,18 @@
 - **Emotion**: Para estilização de componentes com CSS-in-JS, proporcionando flexibilidade e manutenção de estilos.
 - **Lucide-React**: Biblioteca para ícones personalizados e de fácil integração.
 - **React-Scroll**: Implementação de rolagem suave para melhorar a navegação.
+- **React-Hook-Form**: Para gerenciamento de formulários, com suporte a validações.
+- **Zod**: Biblioteca de validação de dados com TypeScript.
+- **React-Input-Mask**: Para adicionar máscaras de entrada nos campos de formulário.
 
 ### Ferramentas de Desenvolvimento:
 
 - **ESLint**: Para garantir qualidade e consistência do código.
 - **TypeScript-ESLint**: Suporte para linting de código TypeScript.
 - **Vite Plugin React**: Suporte para otimização do build e desenvolvimento com React.
+- **Jest**: Framework de testes, com integração para testes unitários e de componentes.
+- **Testing Library**: Biblioteca para realizar testes de interação com os componentes React.
+- **ts-jest**: Suporte a testes com TypeScript.
 
 ---
 
@@ -76,7 +83,7 @@ pnpm preview
 
 1. Instale as dependências com o comando:
 
-   ```zsh ||
+   ```zsh
    pnpm install
    ```
 
@@ -93,22 +100,25 @@ pnpm preview
    ```
 
 4. Para verificação de linting:
+
    ```zsh
    pnpm lint
    ```
 
 ---
 
-## 📦 Estrutura do Projeto
 
-- **Dependências principais**: React, Zustand, MUI, Emotion, React-Router-Dom, Lucide-React, React-Scroll.
-- **Dependências de desenvolvimento**: ESLint, TypeScript, Vite.
-
----
 
 ## 🤖 Conclusão
 
 O projeto **Acess Events** utiliza as mais modernas tecnologias de front-end para construir uma plataforma altamente interativa e otimizada. Ele proporciona uma experiência fluída tanto para os desenvolvedores quanto para os usuários finais, com foco em usabilidade e performance.
+
+---
+
+## 📱 Acesse aqui
+
+- https://access-events-git-build-update-murius17s-projects.vercel.app/
+
 
 ---
 

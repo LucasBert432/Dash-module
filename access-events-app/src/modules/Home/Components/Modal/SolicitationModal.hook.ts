@@ -29,6 +29,7 @@ export const useDataForm = () => {
         variant: "success",
         position: "top-right",
       });
+      form.reset();
       closeModal();
     },
     [closeModal]
