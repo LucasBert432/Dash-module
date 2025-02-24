@@ -19,7 +19,6 @@ export const SolicitationModal: FunctionComponent = () => {
       return;
     }
     formRef?.current?.requestSubmit();
-    form.reset();
   };
 
   const handleCloseModal = useCallback(() => {
