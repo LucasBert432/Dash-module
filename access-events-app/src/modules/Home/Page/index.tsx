@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Header from "../../../Components/Header";
+import Header from "../../../Components/Header/Header.component";
 import SectionHome from "../Components/SectionHome";
 import EventsHome from "../Components/EventsSection";
 import SuggestionSection from "../Components/SuggestionSection";

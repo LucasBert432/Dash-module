@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { BoxContainer } from "../../../../Components/BoxContainer";
+import { BoxContainer } from "../../../../Components/BoxContainer/BoxContainer.component";
 import CardList from "./Components/CardList";
 import useStyles from "./styles";
 

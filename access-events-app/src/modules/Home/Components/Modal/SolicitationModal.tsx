@@ -2,10 +2,10 @@ import { FunctionComponent, useCallback, useRef } from "react";
 import { FormProvider } from "react-hook-form";
 import { useModalContext } from "../../../../contexts/ModalContext";
 import { useDataForm } from "./SolicitationModal.hook";
-import Modal from "../../../../Components/Modal";
+import Modal from "../../../../Components/Modal/Modal.component";
 import { Button } from "../../../../Components/Button";
 import { Flex } from "../../../../Components/Flex";
-import { InputControl } from "../../../../Components/InputControl";
+import { InputControl } from "../../../../Components/InputControl/InputControl.component";
 import useStyles from "./SolicitationModal.styles";
 
 export const SolicitationModal: FunctionComponent = () => {

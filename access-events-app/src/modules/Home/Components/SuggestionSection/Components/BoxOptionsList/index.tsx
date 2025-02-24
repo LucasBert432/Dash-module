@@ -1,7 +1,7 @@
 import { FunctionComponent, useState } from "react";
 import useStyles from "./BoxOptionsList.styles";
 import { initialBoxOptions } from "./BoxOptionsList.consts";
-import BoxOption from "../../../../../../Components/BoxOption";
+import BoxOption from "../../../../../../Components/BoxOption/BoxOption.component";
 
 const BoxOptionsList: FunctionComponent = () => {
   const styles = useStyles();

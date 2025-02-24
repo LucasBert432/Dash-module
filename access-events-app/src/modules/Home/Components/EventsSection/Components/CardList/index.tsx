@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useStyles from "./CardList.styles";
 import { initialCards } from "./CardList.consts";
-import Card from "../../../../../../Components/Card";
+import Card from "../../../../../../Components/Card/Card.Component";
 import { formatDate } from "../../../../../../utils/formatDate";
 
 const CardList = () => {
