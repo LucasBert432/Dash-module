@@ -116,7 +116,7 @@ O projeto **Acess Events** utiliza as mais modernas tecnologias de front-end par
 ---
 
 ## 📱 Acesse aqui
-
+**Necessário conta na vercel**
 - https://access-events-ewcwm5bc0-murius17s-projects.vercel.app/
 
 
