@@ -117,7 +117,7 @@ O projeto **Acess Events** utiliza as mais modernas tecnologias de front-end par
 
 ## 📱 Acesse aqui
 
-- https://access-events-git-build-update-murius17s-projects.vercel.app/
+- https://access-events-ewcwm5bc0-murius17s-projects.vercel.app/
 
 
 ---
