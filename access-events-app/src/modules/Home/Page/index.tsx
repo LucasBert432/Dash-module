@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react";
-import Header from "../../../Components/Header";
 import SectionHome from "../Components/SectionHome";
 import EventsHome from "../Components/EventsSection";
 import SuggestionSection from "../Components/SuggestionSection";
 import CreateEventSection from "../Components/CreateEventSection";
 import About from "../Components/About";
+import { Header } from "../../../Components/Header/Header.component";
 
 const Home: FunctionComponent = () => {
   return (

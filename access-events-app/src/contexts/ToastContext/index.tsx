@@ -1,19 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
-import {
-  ToastComponent,
-  ToastPosition,
-  ToastVariant,
-} from "../../Components/ToastComponent";
-
-interface Toast {
-  message: string;
-  variant: ToastVariant;
-  position: ToastPosition;
-}
-
-interface ToastContextType {
-  toast: (options: Toast) => void;
-}
+import { ToastComponent } from "../../Components/ToastComponent/Toast.component";
+import { Toast, ToastContextType } from "./Toast.context";
 
 const ToastContext = createContext<ToastContextType | undefined>(undefined);
 

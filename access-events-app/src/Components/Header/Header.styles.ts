@@ -63,6 +63,7 @@ const useStyles = () => {
 
     navOpen: css`
       display: flex;
+      display: "block";
     `,
 
     menu: css`

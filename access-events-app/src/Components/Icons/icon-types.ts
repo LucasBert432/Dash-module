@@ -1,4 +1,4 @@
-import iconMap from "./icon-map.ts";
+import iconMap from "./icon-map";
 import { SVGAttributes } from "react";
 
 export type IconTypes = keyof typeof iconMap.icons;

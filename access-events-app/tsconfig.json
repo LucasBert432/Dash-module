@@ -6,8 +6,19 @@
   ],
 
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "jsx": "react-jsx", // Ou "react" se estiver usando React 17 ou anterior
+    "target": "ESNext", // Define o target como ESNext
+    "module": "ESNext", // Define o módulo como ESNext
+    "esModuleInterop": true, // Permite interoperabilidade entre CommonJS e ESM
     "jsxImportSource": "@emotion/react",
-    "types": ["vite-plugin-svgr/client"]
+    "moduleResolution": "bundler",
+    "noEmit": true, // Or "emitDeclarationOnly": true
+    "allowImportingTsExtensions": true,
+    "types": [
+      "jest",
+      "@testing-library/jest-dom",
+      "node",
+      "@emotion/react/types/css-prop"
+    ]
   }
 }

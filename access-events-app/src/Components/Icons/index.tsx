@@ -1,8 +1,8 @@
 import { FunctionComponent, useMemo, Suspense } from "react";
 import { PropsIcon } from "./icon-types";
-import iconMap from "./icon-map.ts";
-import useThemeStyles from "../../hook/useThemeStyles.ts";
-import { useThemeStore } from "../../globalStore/globalStore.ts";
+import iconMap from "./icon-map";
+import useThemeStyles from "../../hook/useThemeStyles";
+import { useThemeStore } from "../../globalStore/globalStore";
 const EmptyIcon = () => <div />;
 
 const Icon: FunctionComponent<PropsIcon> = ({

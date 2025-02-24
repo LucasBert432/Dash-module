@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
 export interface ContainerProps {
-  size?: number | undefined;
+  size?: string | number;
   children?: ReactNode;
 }
